@@ -8,43 +8,82 @@
   </head>
   <body>
     <section class="acceuil-bg-magic pt-6 pb-16 sm:pb-24 min-h-500 md:min-h-650">
-      <nav class="max-w-7xl mx-auto relative flex items-center justify-center">
-        <div class="hidden md:left-0 md:inline md:absolute">
+      <nav class="hidden max-w-7xl mx-auto relative md:flex items-center justify-center">
+        <div class=" md:left-0 md:inline md:absolute">
           <img 
           class="ml-4 w-auto h-12"
           src="ressources/RocketLogo.svg" 
           alt="icon rocket">
         </div>
 
-        <ul class="hidden md:flex md:space-x-10">
+        <ul class=" md:flex md:space-x-10">
           <li>
-            <a href="#" class="font-medium text-lg text-black-500 hover:text-gray-900">
+            <a href="#acceuil" class="font-medium text-lg text-black-500 hover:text-gray-900">
               Acceuil
             </a>
           </li>
           <li>
-            <a href="#" class="font-medium text-lg text-black-500 hover:text-gray-900">
-              Service
+            <a href="#services" class="font-medium text-lg text-black-500 hover:text-gray-900">
+              Services
             </a>
           </li>
           <li>
-            <a href="#" class="font-medium text-lg text-black-500 hover:text-gray-900">
-              Nos valeurs
+            <a href="#tarifs" class="font-medium text-lg text-black-500 hover:text-gray-900">
+              Nos tarifs
             </a>
           </li>
           <li>
-            <a href="#" class="font-medium text-lg text-black-500 hover:text-gray-900">
+            <a href="#contact" class="font-medium text-lg text-black-500 hover:text-gray-900">
               Contact
             </a>
           </li>
         </ul>
 
         <a href="#" 
-        class="hidden mr-4 shadow-md px-6 py-2 border font-medium round-md text-indigo-600 bg-white
+        class=" mr-4 shadow-md px-6 py-2 border font-medium round-md text-indigo-600 bg-white
          hover:bg-gray-50 md:block md:absolute md:right-0">Essayer</a>
       </nav>
 
-      <div class="mt-32 px-4 text-center sm:mt-28">
+        <!-- Navigation mobile -->
+        <nav class="absolute top-2 w-11/12 left-1/2 transform -translate-x-1/2 shadow-md ring-1 ring-black ring-opacity-5 p-1 md:hidden rounded-lg bg-white">
+          <div class="px-5 h-16 flex items-center justify-between">
+            <a href="#">
+              <img src="ressources/RocketLogo.svg" alt="logo fusée" class="h-8 w-auto sm:h-10">
+            </a>
+            <div class="-mr-2">
+              <button class="icone-toggle bg-white rounded-md p-2 inline-flex items-center justify-center ring-1
+              ring-opacity-20">
+                <img src="ressources/menu.svg" alt="icône de menu" class="h-6 w-6">
+              </button>
+            </div>
+          </div>
+          <ul class="toggle-menu hidden p-2">
+            <li>
+              <a href="#acceuil" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                Acceuil
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#tarifs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                Nos tarifs
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <!-- Partie acceuil -->
+      <div id="acceuil" class="mt-32 px-4 text-center sm:mt-28">
         <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span class="block xl:inline">Faites décoler votre</span>
           <span class="block text-blue-600 xl:inline">Business en ligne </span>
@@ -67,7 +106,9 @@
       </div>
     </section>
 
-    <section class="relative flex flex-col border-gray-200 border-t lg:flex-row">
+    
+    <!-- Section CTA -->
+    <section id="services" class="relative flex flex-col border-gray-200 border-t lg:flex-row">
       <div class="px-10 pb-16 pt-10 w-full order-2 text-center md:py-32 lg:w-1/2 lg:order-1">
         <h2 class="font-extrabold text-gray-900 text-5xl">
           <span>PASSEZ À L'ACTION</span>
@@ -355,7 +396,7 @@
 
 
         <!-- Séparation Formulaire de contact -->
-        <section class="bg-gray-50 pb-40">
+        <section id="contact" class="bg-gray-50 pb-40">
           <h2 class="text-center font-medium pt-10 pb-6 text-3xl md:text-4xl">
             Rentrons en contact
           </h2>
@@ -404,6 +445,33 @@
             </div>
           </form>
         </section>
+
+        <!-- Séparation Formulaire de contact -->
+        <footer class="bg-gray-800 py-5">
+          <h3 class="text-3xl pb-5 text-center text-white">
+            Retrouvez-nous ici
+          </h3>
+          <div class="mb-5 flex space-x-6 justify-center text-white">
+            <a href="#">
+              <img src="ressources/fb.svg" alt="icône fb" class="h-6 w-6">
+            </a>
+            <a href="#">
+              <img src="ressources/instagram.svg" alt="icône instagram" class="h-6 w-6">
+            </a>
+            <a href="#">
+              <img src="ressources/twitter.svg" alt="icône twitter" class="h-6 w-6">
+            </a>
+            <a href="#">
+              <img src="ressources/githubpetitlogo.svg" alt="icône github" class="h-6 w-6">
+            </a>
+          </div>
+          <hr class="w-36 mx-auto mb-5">
+
+          <p class="text-center mt-8 text-base text-gray-400 md:mt-0">
+            &copy; 2020 SEOTOOL, TOUS DROITS RÉSERVÉS
+          </p>
+        </footer>
         
+      <script src="app.js"></script>
   </body>
 </html>
